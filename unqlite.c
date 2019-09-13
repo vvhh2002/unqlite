@@ -1017,6 +1017,7 @@ UNQLITE_APIEXPORT const char * unqlite_lib_version(void);
 UNQLITE_APIEXPORT const char * unqlite_lib_signature(void);
 UNQLITE_APIEXPORT const char * unqlite_lib_ident(void);
 UNQLITE_APIEXPORT const char * unqlite_lib_copyright(void);
+UNQLITE_APIEXPORT const unqlite_vfs * unqlite_get_buildin_vfs(void);
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
@@ -4066,6 +4067,11 @@ const char * unqlite_lib_ident(void)
 const char * unqlite_lib_copyright(void)
 {
 	return UNQLITE_COPYRIGHT;
+}
+
+const unqlite_vfs * unqlite_get_buildin_vfs(void)
+{
+	return unqliteExportBuiltinVfs();
 }
 /*
  * Remove harmfull and/or stale flags passed to the [unqlite_open()] interface.
