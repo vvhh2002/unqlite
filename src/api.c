@@ -530,6 +530,12 @@ const char * unqlite_lib_copyright(void)
 {
 	return UNQLITE_COPYRIGHT;
 }
+
+
+const unqlite_vfs * unqlite_get_buildin_vfs(void)
+{
+	return unqliteExportBuiltinVfs();
+}
 /*
  * Remove harmfull and/or stale flags passed to the [unqlite_open()] interface.
  */
@@ -2789,3 +2795,4 @@ UNQLITE_APIEXPORT unsigned int unqlite_util_random_num(unqlite *pDb)
 #endif
 	 return iNum;
 }
+
