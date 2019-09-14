@@ -14,7 +14,26 @@ SET(HEADERS_UNQLITE
 )
 
 SET(SOURCES_UNQLITE
-  unqlite.c
+  src/os.c
+  src/os_win.c
+  src/os_unix.c
+  src/mem_kv.c
+  src/unqlite_vm.c
+  src/bitvec.c
+  src/pager.c
+  src/jx9_vm.c
+  src/jx9_vfs.c
+  src/jx9_lib.c
+  src/jx9_lex.c
+  src/jx9_api.c
+  src/jx9_json.c
+  src/jx9_parse.c
+  src/jx9_const.c
+  src/jx9_memobj.c
+  src/jx9_hashmap.c
+  src/jx9_compile.c
+  src/jx9_builtin.c
+  src/api.c
 )
 #add_compile_definitions(UNQLITE_ENABLE_THREADS)
 #add_compile_definitions(JX9_DISABLE_BUILTIN_FUNC)
