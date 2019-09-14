@@ -5,6 +5,10 @@
 #ifdef __cplusplus
  extern "C" {
 #endif 
+#define UNQLITE_ENABLE_THREADS
+#define JX9_DISABLE_BUILTIN_FUNC
+#define JX9_DISABLE_DISK_IO
+
 /*
  * Symisc UnQLite: An Embeddable NoSQL (Post Modern) Database Engine.
  * Copyright (C) 2012-2019, Symisc Systems http://unqlite.org/
