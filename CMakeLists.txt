@@ -18,9 +18,12 @@ SET(SOURCES_UNQLITE
   src/os_win.c
   src/os_unix.c
   src/mem_kv.c
-  src/unqlite_vm.c
+  src/lhash_kv.c
+  src/fastjson.c  
   src/bitvec.c
   src/pager.c
+  src/unqlite_vm.c
+  src/unqlite_jx9.c
   src/jx9_vm.c
   src/jx9_vfs.c
   src/jx9_lib.c
