@@ -1,7 +1,4 @@
 /* This file was automatically generated.  Do not edit (Except for compile time directives)! */ 
-#define UNQLITE_ENABLE_THREADS 
-#define JX9_DISABLE_BUILTIN_FUNC 
-#define JX9_DISABLE_DISK_IO 
 #ifndef _UNQLITE_H_
 #define _UNQLITE_H_
 /* Make sure we can call this stuff from C++ */
