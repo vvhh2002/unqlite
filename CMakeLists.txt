@@ -16,9 +16,9 @@ SET(HEADERS_UNQLITE
 SET(SOURCES_UNQLITE
   unqlite.c
 )
-add_compile_definitions(UNQLITE_ENABLE_THREADS)
-add_compile_definitions(JX9_DISABLE_BUILTIN_FUNC)
-add_compile_definitions(JX9_DISABLE_DISK_IO)
+add_compile_definitions(UNQLITE_ENABLE_THREADS=1)
+add_compile_definitions(JX9_DISABLE_BUILTIN_FUNC=1)
+add_compile_definitions(JX9_DISABLE_DISK_IO=1)
 SET(UNQLITE_STATIC_LIB unqlite)
 ADD_LIBRARY(${UNQLITE_STATIC_LIB} STATIC ${HEADERS_UNQLITE} ${SOURCES_UNQLITE})
 
