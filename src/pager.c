@@ -15,6 +15,7 @@
 #ifndef UNQLITE_AMALGAMATION
 #include "unqliteInt.h"
 #endif
+#include <stddef.h>
 /*
 ** This file implements the pager and the transaction manager for UnQLite (Mostly inspired from the SQLite3 Source tree).
 **
