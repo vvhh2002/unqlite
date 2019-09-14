@@ -1,13 +1,14 @@
 /* This file was automatically generated.  Do not edit (Except for compile time directives)! */ 
+#define UNQLITE_ENABLE_THREADS 
+#define JX9_DISABLE_BUILTIN_FUNC 
+#define JX9_DISABLE_DISK_IO 
 #ifndef _UNQLITE_H_
 #define _UNQLITE_H_
 /* Make sure we can call this stuff from C++ */
 #ifdef __cplusplus
  extern "C" {
 #endif 
-#define UNQLITE_ENABLE_THREADS 1
-#define JX9_DISABLE_BUILTIN_FUNC 1
-#define JX9_DISABLE_DISK_IO 1
+
 
 /*
  * Symisc UnQLite: An Embeddable NoSQL (Post Modern) Database Engine.
